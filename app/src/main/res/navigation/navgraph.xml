@@ -12,10 +12,50 @@
         <action
             android:id="@+id/action_placeFragment_to_newYorkInfoFragment"
             app:destination="@id/newYorkInfoFragment" />
+        <action
+            android:id="@+id/action_placeFragment_to_californiaFragment"
+            app:destination="@id/californiaFragment" />
+        <action
+            android:id="@+id/action_placeFragment_to_texasFragment"
+            app:destination="@id/texasFragment" />
+        <action
+            android:id="@+id/action_placeFragment_to_unitedKingdomFragment"
+            app:destination="@id/unitedKingdomFragment" />
+        <action
+            android:id="@+id/action_placeFragment_to_franceFragment"
+            app:destination="@id/franceFragment" />
+        <action
+            android:id="@+id/action_placeFragment_to_japanFragment"
+            app:destination="@id/japanFragment" />
     </fragment>
     <fragment
         android:id="@+id/newYorkInfoFragment"
         android:name="com.example.finalproject.NewYorkInfoFragment"
         android:label="fragment_newyorkinfo"
         tools:layout="@layout/fragment_newyorkinfo" />
+    <fragment
+        android:id="@+id/californiaFragment"
+        android:name="com.example.finalproject.CaliforniaFragment"
+        android:label="fragment_california"
+        tools:layout="@layout/fragment_california" />
+    <fragment
+        android:id="@+id/texasFragment"
+        android:name="com.example.finalproject.TexasFragment"
+        android:label="fragment_texas"
+        tools:layout="@layout/fragment_texas" />
+    <fragment
+        android:id="@+id/unitedKingdomFragment"
+        android:name="com.example.finalproject.UnitedKingdomFragment"
+        android:label="fragment_united_kingdom"
+        tools:layout="@layout/fragment_united_kingdom" />
+    <fragment
+        android:id="@+id/franceFragment"
+        android:name="com.example.finalproject.FranceFragment"
+        android:label="fragment_france"
+        tools:layout="@layout/fragment_france" />
+    <fragment
+        android:id="@+id/japanFragment"
+        android:name="com.example.finalproject.JapanFragment"
+        android:label="fragment_japan"
+        tools:layout="@layout/fragment_japan" />
 </navigation>

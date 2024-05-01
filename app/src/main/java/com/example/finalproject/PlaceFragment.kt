@@ -10,18 +10,29 @@ import com.example.finalproject.databinding.FragmentPlaceBinding
 
 
 class PlaceFragment : Fragment() {
-    private var _binding : FragmentPlaceBinding? = null
+    private var _binding: FragmentPlaceBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        val rootView = binding.root
-        _binding =  FragmentPlaceBinding.inflate(inflater, container, false)
-        binding.newYorkButton.setOnClickListener {
-        rootView.findNavController().navigate(R.id.action_placeFragment_to_newYorkInfoFragment)
-        }
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
+        _binding = FragmentPlaceBinding.inflate(inflater, container, false)
+        val rootView = binding.root
+
+        binding.newYorkButton.setOnClickListener {
+            rootView.findNavController().navigate(R.id.action_placeFragment_to_newYorkInfoFragment)
+        }
+        binding.caliButton.setOnClickListener{
+            rootView.findNavController().navigate(R.id.action_placeFragment_to_californiaFragment)
+        }
+        binding.texasButton.setOnClickListener{
+            rootView.findNavController().navigate(R.id.action_placeFragment_to_texasFragment)
+        }
+        binding.franceButton.setOnClickListener{
+            rootView.findNavController().navigate(R.id.action_placeFragment_to_franceFragment)
+        }
+        binding.japanButton.setOnClickListener{
+            rootView.findNavController().navigate(R.id.action_placeFragment_to_japanFragment)
+        }
         return rootView
     }
 
