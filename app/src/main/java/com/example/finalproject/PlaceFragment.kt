@@ -27,6 +27,9 @@ class PlaceFragment : Fragment() {
         binding.texasButton.setOnClickListener{
             rootView.findNavController().navigate(R.id.action_placeFragment_to_texasFragment)
         }
+        binding.ukButton.setOnClickListener{
+            rootView.findNavController().navigate(R.id.action_placeFragment_to_unitedKingdomFragment)
+        }
         binding.franceButton.setOnClickListener{
             rootView.findNavController().navigate(R.id.action_placeFragment_to_franceFragment)
         }
