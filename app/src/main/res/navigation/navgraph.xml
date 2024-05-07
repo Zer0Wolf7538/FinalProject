@@ -30,6 +30,9 @@
         <action
             android:id="@+id/action_placeFragment_to_aboutFragment"
             app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_placeFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
     </fragment>
     <fragment
         android:id="@+id/newYorkInfoFragment"
@@ -66,4 +69,9 @@
         android:name="com.example.finalproject.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.finalproject.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
 </navigation>

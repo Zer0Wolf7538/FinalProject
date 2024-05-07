@@ -43,6 +43,9 @@ class PlaceFragment : Fragment() {
         binding.japanButton.setOnClickListener{
             rootView.findNavController().navigate(R.id.action_placeFragment_to_japanFragment)
         }
+        binding.helpButton.setOnClickListener{
+            rootView.findNavController().navigate(R.id.action_placeFragment_to_helpFragment)
+        }
         val menuHost: MenuHost = requireActivity()
 
         menuHost.addMenuProvider(object : MenuProvider {
