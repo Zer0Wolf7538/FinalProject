@@ -5,17 +5,25 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
+import com.example.finalproject.databinding.FragmentCaliforniaBinding
+import com.example.finalproject.databinding.FragmentFranceBinding
 
 
 class FranceFragment : Fragment() {
-
+    private var _binding: FragmentFranceBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_france, container, false)
+        _binding = FragmentFranceBinding.inflate(inflater, container, false)
+        val rootView = binding.root
+        binding.franceBackButton.setOnClickListener {
+            rootView.findNavController().navigate(R.id.action_franceFragment_to_placeFragment)
+        }
+        return rootView
     }
 
 

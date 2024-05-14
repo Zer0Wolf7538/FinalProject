@@ -38,32 +38,56 @@
         android:id="@+id/newYorkInfoFragment"
         android:name="com.example.finalproject.NewYorkInfoFragment"
         android:label="fragment_newyorkinfo"
-        tools:layout="@layout/fragment_newyorkinfo" />
+        tools:layout="@layout/fragment_newyorkinfo" >
+        <action
+            android:id="@+id/action_newYorkInfoFragment_to_placeFragment"
+            app:destination="@id/placeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/californiaFragment"
         android:name="com.example.finalproject.CaliforniaFragment"
         android:label="fragment_california"
-        tools:layout="@layout/fragment_california" />
+        tools:layout="@layout/fragment_california" >
+        <action
+            android:id="@+id/action_californiaFragment_to_placeFragment"
+            app:destination="@id/placeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/texasFragment"
         android:name="com.example.finalproject.TexasFragment"
         android:label="fragment_texas"
-        tools:layout="@layout/fragment_texas" />
+        tools:layout="@layout/fragment_texas" >
+        <action
+            android:id="@+id/action_texasFragment_to_placeFragment"
+            app:destination="@id/placeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/unitedKingdomFragment"
         android:name="com.example.finalproject.UnitedKingdomFragment"
         android:label="fragment_united_kingdom"
-        tools:layout="@layout/fragment_united_kingdom" />
+        tools:layout="@layout/fragment_united_kingdom" >
+        <action
+            android:id="@+id/action_unitedKingdomFragment_to_placeFragment"
+            app:destination="@id/placeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/franceFragment"
         android:name="com.example.finalproject.FranceFragment"
         android:label="fragment_france"
-        tools:layout="@layout/fragment_france" />
+        tools:layout="@layout/fragment_france" >
+        <action
+            android:id="@+id/action_franceFragment_to_placeFragment"
+            app:destination="@id/placeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/japanFragment"
         android:name="com.example.finalproject.JapanFragment"
         android:label="fragment_japan"
-        tools:layout="@layout/fragment_japan" />
+        tools:layout="@layout/fragment_japan" >
+        <action
+            android:id="@+id/action_japanFragment_to_placeFragment"
+            app:destination="@id/placeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.finalproject.AboutFragment"
@@ -73,5 +97,9 @@
         android:id="@+id/helpFragment"
         android:name="com.example.finalproject.HelpFragment"
         android:label="fragment_help"
-        tools:layout="@layout/fragment_help" />
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment_to_placeFragment"
+            app:destination="@id/placeFragment" />
+    </fragment>
 </navigation>

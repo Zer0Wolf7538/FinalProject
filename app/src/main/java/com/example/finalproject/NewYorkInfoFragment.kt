@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.example.finalproject.databinding.FragmentNewyorkinfoBinding
 
 
@@ -20,6 +21,9 @@ class NewYorkInfoFragment : Fragment() {
 
         _binding = FragmentNewyorkinfoBinding.inflate(inflater, container, false)
         val rootView = binding.root
+        binding.nyBackButton.setOnClickListener {
+            rootView.findNavController().navigate(R.id.action_newYorkInfoFragment_to_placeFragment)
+        }
         return rootView
     }
 

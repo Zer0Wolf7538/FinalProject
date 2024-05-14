@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.example.finalproject.databinding.FragmentHelpBinding
 
 
@@ -39,6 +40,9 @@ class HelpFragment : Fragment() {
             val mapIntent: Intent = Uri.parse("geo: 0,0?q=400+1st+Avenue,+Needham,+MA")
                 .let { location -> Intent(Intent.ACTION_VIEW, location) }
             startActivity(mapIntent)
+        }
+        binding.backButton.setOnClickListener {
+            rootView.findNavController().navigate(R.id.action_helpFragment_to_placeFragment)
         }
 
 

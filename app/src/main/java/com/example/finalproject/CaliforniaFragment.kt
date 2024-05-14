@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.example.finalproject.databinding.FragmentCaliforniaBinding
-import com.example.finalproject.databinding.FragmentPlaceBinding
+
 
 
 class CaliforniaFragment : Fragment() {
@@ -15,10 +17,11 @@ class CaliforniaFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-
         _binding = FragmentCaliforniaBinding.inflate(inflater, container, false)
         val rootView = binding.root
+        binding.calBackButton.setOnClickListener {
+            rootView.findNavController().navigate(R.id.action_californiaFragment_to_placeFragment)
+        }
         return rootView
     }
 
