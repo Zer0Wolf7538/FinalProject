@@ -5,6 +5,7 @@
     android:id="@+id/about"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#88B6FB"
     tools:context=".AboutFragment">
 
 
@@ -12,7 +13,8 @@
         android:id="@+id/aboutTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This an alpha version of the Traveling app. There are only a limited amount of locations to choose from."
+        android:padding="8dp"
+        android:text="This an alpha version of the Traveling app. There are only a limited amount of locations to choose from. It will also help you figure out where you want to go."
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold|italic"
@@ -28,5 +30,15 @@
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Traveling app"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
